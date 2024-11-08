@@ -44,7 +44,7 @@ func main() {
     routes.RegisterRoutes(g, db)
 
     // Ejecutar el servidor
-    if err := g.Run(":8081"); err != nil {
+    if err := g.Run(":8082"); err != nil {
         log.Fatal("Error al iniciar el servidor:", err)
     }
 }
