@@ -14,7 +14,7 @@ var db *sql.DB
 func main() {
     // Inicializar la conexión a la base de datos
     var err error
-    db, err = sql.Open("postgres", "host=localhost port=5434 user=admin password=admin123 dbname=db_buscador sslmode=disable")
+    db, err = sql.Open("postgres", "host=localhost port=5432 user=admin password=gestion72 dbname=db_gestion_usuarios_victimas sslmode=disable")
     if err != nil {
         log.Fatal("Error al conectar a la base de datos:", err)
     }
